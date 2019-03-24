@@ -1,4 +1,3 @@
-import queue
 import read
 from huffmantree.huffmantree import HuffmanTree
 
