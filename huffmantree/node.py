@@ -1,7 +1,12 @@
 class Node:
-    def __init__(self, priority, value=None, left=None, right=None):
-        self._priority = priority
-
+    def __init__(
+            self,
+            priority: int,
+            value=None,
+            left: 'Node'=None,
+            right: 'Node'=None
+    ):
+        self.priority = priority
         self.value = value
         self.left = left
         self.right = right
@@ -11,8 +16,4 @@ class Node:
 
     # for priority queue
     def __lt__(self, other):
-        return self._priority < other._priority
-
-    @property
-    def priority(self):
-        return self._priority
+        return self.priority < other.priority
