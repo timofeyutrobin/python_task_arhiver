@@ -1,10 +1,10 @@
 class Node:
     def __init__(
             self,
-            priority: int,
+            priority,
             value=None,
-            left: 'Node'=None,
-            right: 'Node'=None
+            left: 'Node' = None,
+            right: 'Node' = None
     ):
         self.priority = priority
         self.value = value
