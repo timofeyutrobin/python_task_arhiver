@@ -1,4 +1,4 @@
-from archiver import Archiver
+import archiver
 
 if __name__ == "__main__":
     pass
